@@ -1,0 +1,276 @@
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap');
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1;
+    font-size: 100%;
+    font-family: 'Open Sans', sans-serif;
+    color: #57364b;
+    background-color: #fff0f6;
+}
+
+#container {
+    width: 980px;
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    box-shadow: 0 0 1em #f2c6d8;
+}
+
+/* Header */
+header {
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+header h1 {
+    margin: 20px 10px;
+    color: #d63384;
+}
+
+/* Navigasi */
+nav {
+    display: block;
+    background-color: #f4a6c1;
+}
+
+nav a {
+    padding: 15px 30px;
+    display: inline-block;
+    color: #ffffff;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a.active,
+nav a:hover {
+    background-color: #d63384;
+    color: #ffffff;
+}
+
+/* Hero Panel */
+#hero {
+    background-color: #ffe0ed;
+    padding: 50px 20px;
+    margin-bottom: 20px;
+}
+
+#hero h1 {
+    margin-bottom: 20px;
+    font-size: 35px;
+    color: #c02670;
+}
+
+#hero p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 25px;
+    color: #57364b;
+}
+
+/* Main Content */
+#wrapper {
+    margin: 0;
+    overflow: hidden;
+}
+
+#main {
+    float: left;
+    width: 66.6667%;
+    padding: 20px;
+}
+
+/* Sidebar */
+#sidebar {
+    float: left;
+    width: 33.3333%;
+    padding: 20px;
+}
+
+/* Widget */
+.widget-box {
+    border: 1px solid #f7d4e2;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.widget-box .title {
+    padding: 10px 16px;
+    background-color: #f4a6c1;
+    color: #ffffff;
+}
+
+.widget-box ul {
+    list-style-type: none;
+}
+
+.widget-box li {
+    border-bottom: 1px solid #f7dce7;
+}
+
+.widget-box li a {
+    padding: 10px 16px;
+    color: #57364b;
+    display: block;
+    text-decoration: none;
+}
+
+.widget-box li:hover a {
+    background-color: #ffe0ed;
+    color: #c02670;
+}
+
+.widget-box p {
+    padding: 15px;
+    line-height: 25px;
+}
+
+/* Footer */
+footer {
+    clear: both;
+    background-color: #d63384;
+    padding: 20px;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Three Column Boxes */
+.box {
+    display: block;
+    float: left;
+    width: 33.333333%;
+    box-sizing: border-box;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.box h3 {
+    margin: 15px 0;
+    color: #c02670;
+}
+
+.box p {
+    line-height: 20px;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.box img {
+    border: 0;
+    vertical-align: middle;
+}
+
+.image-circle {
+    border-radius: 50%;
+}
+
+/* Row */
+.row {
+    margin: 0 -10px;
+    box-sizing: border-box;
+}
+
+.row:after,
+.row:before,
+.entry:after,
+.entry:before {
+    content: '';
+    display: table;
+}
+
+.row:after,
+.entry:after {
+    clear: both;
+}
+
+/* Divider */
+.divider {
+    border: 0;
+    border-top: 1px solid #f7d4e2;
+    margin: 40px 0;
+}
+
+/* Article Entry */
+.entry {
+    margin: 15px 0;
+}
+
+.entry h2 {
+    margin-bottom: 20px;
+    color: #c02670;
+}
+
+.entry p {
+    line-height: 25px;
+}
+
+.entry img {
+    float: left;
+    border-radius: 5px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+.entry .right-img {
+    float: right;
+    margin-right: 0;
+    margin-left: 15px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 16px;
+    background-color: #f4a6c1;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.btn:hover {
+    background-color: #d63384;
+}
+
+.btn-large {
+    padding: 12px 22px;
+    font-size: 16px;
+}
+
+/* Responsive Layout */
+@media screen and (max-width: 768px) {
+    #main,
+    #sidebar {
+        float: none;
+        width: 100%;
+    }
+
+    .box {
+        float: none;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    nav a {
+        padding: 12px 15px;
+    }
+
+    #hero h1 {
+        font-size: 28px;
+    }
+
+    #hero p {
+        font-size: 16px;
+    }
+}
